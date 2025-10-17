@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-formulario.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Job Application Form</h1>
+            <label for="name">Full Name:</label>
+            <input id="name" name="name" type="text" required placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <label for="position">Position:</label>
+            <select name="position" id="position">
+                <option value="Select a position">Select a position</option>
+                <option value="Developer">Developer</option>
+                <option value="Developer">Designer</option>
+                <option value="Developer">Manager</option>
+            </select>
+            <fieldset class="radio-group">
+                <legend>Availability:</legend>
+                <input type="radio" name="availability" id="full-time" checked>
+                <label for="full-time">Full-Time</label>
+                <input type="radio" name="availability" id="part-time">
+                <label for="part-time">Part-Time</label>
+            </fieldset>
+            <p>Why do you want this job?</p>
+            <textarea name="message" id="message" placeholder="Write your motivation"></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+
+</html>
